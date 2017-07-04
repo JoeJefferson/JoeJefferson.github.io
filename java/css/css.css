@@ -1,0 +1,77 @@
+body{
+	font-family: 宋体;
+	margin:0px;
+	padding:0px;
+}
+div{
+	margin:0px;
+	padding:0px;
+}
+img{
+	margin:0px;
+	padding:0px;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	text-align: center;
+}
+li{
+	margin:20px;
+	padding:0px;
+	list-style: none;
+}
+A:link {
+	COLOR: #525252;
+	TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #525252;
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f49100; 
+	TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #525252; 
+	TEXT-DECORATION: none
+}
+#logo{
+	background-image:url('../images/index_01.gif');
+	width:1002px;
+	height:127px;
+}
+#time{
+	background-image:url('../images/index_03.gif');
+	width:1002px;
+	height:33px;
+	color:#ffffff;
+	font-size:10px;
+	padding-top: 1%;
+	text-align: center;
+}
+#left{
+	background-color: #f9f9f9;
+}
+#right{
+	margin:10px;
+	border:1px solid #f0f0f0;
+	background-color: #f9f9f9
+}
+#title{
+	padding:20px;
+	border:1px solid #f0f0f0;
+	text-align:center;
+	font-size:20px;
+	font-family:微软雅黑;
+}
+#video{
+	text-align: center;
+	margin-top:20px;
+}
+.good{
+	float:left;
+	width:100px;
+	text-align: center;
+}
