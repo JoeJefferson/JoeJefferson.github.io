@@ -1,0 +1,46 @@
+第一种超级省事的方法就是利用正则
+方法如下：
+[javascript] view plain copy
+function GetQueryString(name) {  
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");  
+    var r = window.location.search.substr(1).match(reg);  
+    if (r != null) return unescape(r[2]);  
+    return null;  
+}  
+
+使用方法，比如想获取get传值里面的“age”的值
+[javascript] view plain copy
+alert(GetQueryString("age"));  
+直接调用方法，将需要的值传入，直接方法返回值
+
+
+第二种就是处理字符串，get传值是在地址栏传值，所以，直接获取到地址，然后做字符串处理就好
+方法如下：
+[javascript] view plain copy
+function getValue(url){  
+    //首先获取地址  
+    var url = url || window.location.href;  
+    //获取传值  
+    var arr = url.split("?");  
+    //判断是否有传值  
+    if(arr.length == 1){  
+        return null;  
+    }  
+    //获取get传值的个数  
+    var value_arr = arr[1].split("&");  
+    //循环生成返回的对象  
+    var obj = {};  
+    for(var i = 0; i < value_arr.length; i++){  
+        var key_val = value_arr[i].split("=");  
+        obj[key_val[0]]=key_val[1];  
+    }  
+    return obj;  
+}  
+里面可以传入地址，如果不传入的话，就是页面的地址
+获取方式
+[javascript] view plain copy
+console.log(getValue());  
+直接返回的是一个对象，按对象的方式获取即可
+例子：获取get传值的name的值
+[javascript] view plain copy
+console.log(getValue().name);  
