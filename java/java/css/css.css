@@ -1,4 +1,4 @@
-body{
+﻿body{
 	font-family: 宋体;
 	margin:0px;
 	padding:0px;
@@ -17,8 +17,10 @@ ul{
 	text-align: center;
 }
 li{
-	margin:20px;
+	margin:15px;
 	padding:0px;
+	cursor:pointer;
+	color:#525252;
 	list-style: none;
 }
 A:link {
@@ -54,6 +56,12 @@ A:active {
 #left{
 	background-color: #f9f9f9;
 }
+#cate{
+	height:455px;
+}
+#cate4{
+	margin:30px;
+}
 #right{
 	margin:10px;
 	border:1px solid #f0f0f0;
@@ -70,8 +78,10 @@ A:active {
 	text-align: center;
 	margin-top:20px;
 }
+#content{
+	height:390px;
+}
 .good{
-	float:left;
-	width:100px;
-	text-align: center;
+	padding-bottom:7px; 
+	text-align: left;
 }
